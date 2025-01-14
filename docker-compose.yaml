@@ -5,7 +5,7 @@ services:
     image: "${APP_IMAGE}:${APP_TAG}"
     restart: always
     ports:
-      - 6000:5000
+      - 6001:5000
     env_file:
       - .env
     networks:
@@ -14,7 +14,7 @@ services:
     image: ${APP_IMAGE}:${APP_TAG}
     restart: always
     ports:
-      - 6001:5000
+      - 6002:5000
     env_file:
       - .env
     networks:
@@ -23,7 +23,7 @@ services:
     image: ${APP_IMAGE}:${APP_TAG}
     restart: always
     ports:
-      - 6002:5000
+      - 6003:5000
     env_file:
       - .env
     networks:
